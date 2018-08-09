@@ -1,11 +1,20 @@
-package edu.bu.met.cs665;
+package edu.bu.met.cs665.Beverage;
+
+import edu.bu.met.cs665.Behavior.SteepBehavior;
+
+/**
+ * An abstract class for representing tea types
+ * 
+ * @author emmettgreenberg
+ *
+ */
 
 public abstract class Tea extends Beverage {
-	String name;
-	SteepBehavior steepBehavior;
-	int waterTemp;
-	int steepTime;
-	
+	protected String name;
+	protected SteepBehavior steepBehavior;
+	protected int waterTemp;
+	protected int steepTime;
+
 	public void prepare() {
 		steepBehavior.steep(waterTemp, steepTime);
 	}
@@ -14,6 +23,5 @@ public abstract class Tea extends Beverage {
 		// TODO Auto-generated method stub
 		return name;
 	}
-	
 
 }

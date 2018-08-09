@@ -1,20 +1,20 @@
-package edu.bu.met.cs665;
+package edu.bu.met.cs665.Beverage;
+
+/**
+ * An abstract class for representing beverages such as coffee and tea
+ * 
+ * @author emmettgreenberg
+ *
+ */
 
 public abstract class Beverage {
-	
-	private String name;
 
-	 private String description = "unknown beverage";
-	  
-	 public abstract void prepare(); // function for preparing the beverage
+	protected String name;
 
-	 public String getDescription() {
-		 return description;
-	 }
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	/**
+	 * the procedure for preparing the beverage
+	 */
+	public abstract void prepare(); // function for preparing the beverage
 
 	/**
 	 * @return the name
@@ -24,11 +24,11 @@ public abstract class Beverage {
 	}
 
 	/**
-	 * @param name the name to set
+	 * @param name
+	 *            the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 
 }

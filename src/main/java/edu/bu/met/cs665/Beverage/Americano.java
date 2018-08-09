@@ -1,11 +1,19 @@
-package edu.bu.met.cs665;
+package edu.bu.met.cs665.Beverage;
 
-public class Americano extends Coffee{
+import edu.bu.met.cs665.Behavior.AmericanoBrew;
+
+/**
+ * This class represents an Americano coffee
+ * 
+ * @author emmettgreenberg
+ *
+ */
+
+public class Americano extends Coffee {
 
 	public Americano() {
-		this.setName("Americano");
-		setDescription("americano");
-		brewBehavior = new AmericanoBrew(); //getting the brew behavior
+		name = "Americano";
+		brewBehavior = new AmericanoBrew(); // getting the brew behavior for an Americano
 	}
 
 }

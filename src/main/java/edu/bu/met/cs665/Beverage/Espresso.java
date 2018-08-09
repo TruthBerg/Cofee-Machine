@@ -1,14 +1,20 @@
-package edu.bu.met.cs665;
+package edu.bu.met.cs665.Beverage;
 
-public class Espresso extends Coffee{
+import edu.bu.met.cs665.Behavior.EspressoBrew;
 
-	//BrewBehavior brewBehavior;
+/**
+ * This class represents an Espresso
+ * 
+ * @author emmettgreenberg
+ *
+ */
+
+public class Espresso extends Coffee {
 
 	public Espresso() {
-		this.setName("Espresso");
-		setDescription("espresso");
-		brewBehavior = new EspressoBrew(); //getting the brew behavior
-		
+		name = "Espresso";
+		brewBehavior = new EspressoBrew(); // getting the brew behavior
+
 	}
 
 }
