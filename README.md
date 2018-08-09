@@ -1,3 +1,11 @@
+# Implementation and description
+
+This is a refactoring of my Beverage Machine from Assignment 1 (with some new features). The main change is that I added an interface and concrete classes for making Beverage (Coffee and Tea) objects using the factory pattern. This is an improvement to the flexibility and reusability of my code because the app doesn't know which beverage to create until the user provides their choice at runtime, thus it can now create the appropriate beverage from the user's choice. I also added an interface and set of factory classes for creating CondimentDecorator (Milk and Sugar) objects at runtime, given the user's choice of beverage and the quantity they wish to add.
+
+Additionally, though this a technically a new feature, I added a Menu class in order to display the set of choices in a more readable way and also to allow the user to enter a two-character ID (e.g. "C1" for a regular coffee).
+
+I also added exception handing in order to catch invalid input and prevent the app from crashing when the user enters invalid input. And I re-packaged my classes with the idea that the relationships among objects would be clearer.
+
 # Project Template
 
 This is a Java Maven Project Template
