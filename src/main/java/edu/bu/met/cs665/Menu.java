@@ -9,7 +9,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 /**
- * This class represents a menu for coffee and tea items
+ * Added class which represents a menu for coffee and tea items
  * @author emmettgreenberg
  *
  */
@@ -71,7 +71,7 @@ public class Menu {
 		System.out.println("*** MENU ***");
 		
 		// sort the keys
-		SortedSet<String> menuKeys = new TreeSet<>(items.keySet());
+		SortedSet<String> menuKeys = new TreeSet<String>(items.keySet());
 		for (String menu_id: menuKeys) {
 			System.out.println(menu_id  + ". " + items.get(menu_id));
 		}
